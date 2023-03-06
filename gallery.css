@@ -80,6 +80,7 @@
 }
 
 .imagePortofolio {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -134,11 +135,6 @@
     opacity: 1;
     transform: translateX(0);
     transition: opacity 0.3s ease, transform 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
 }
 
 
