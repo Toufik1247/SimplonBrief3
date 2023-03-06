@@ -1,0 +1,75 @@
+h1 {
+    color: white;
+    text-transform: capitalize;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0 15px 0 15px;
+    margin: 20px 0 10px 0;
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+
+.yellowWord {
+    text-transform: uppercase;
+    color: var(--yellow2);
+    font-weight: 700;
+}
+
+.blueWord {
+    text-transform: uppercase;
+    color: var(--blue);
+    font-weight: 700;
+}
+
+.homep {
+    display: block;
+    color: white;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0px 10% 0px 10%;
+    margin: 0 0 10px 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.buttonHome {
+    background-color: white;
+    border-radius: 20px;
+    color: var(--black);
+    padding: 12px 15px 12px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.home {
+    width: 100%;
+    min-width: 280px;
+    padding-top: 35vh;
+    text-align: center;
+    background-image: url(./assets/images/banner_bg.jpg);
+    vertical-align: middle;
+    background-position: center calc(50% + 0px);
+    background-size: cover;
+    min-height: 100vh;
+    box-sizing: border-box;
+
+}
+
+
+@media (min-width: 768px) {
+
+
+    p {
+        margin: 0 10% 10px 10%;
+
+    }
+
+}

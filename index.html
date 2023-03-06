@@ -1,0 +1,221 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Pure CSS Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Tinker</a>
+        <input class="side-menu" type="checkbox" id="side-menu" />
+        <label class="burgerMenu" for="side-menu"><span class="burgerMenu-line"></span></label>
+        <nav class="nav">
+            <ul class="navlinks">
+                <li><a href="#">home</a></li>
+                <li><a href="#">about us</a> </li>
+                <li><a href="#">portofolio</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="home">
+            <h1>
+                <span class="yellowWord">tinker</span>
+                <span class="blueWord">html5</span>
+                template
+            </h1>
+            <p class="homeP">
+                Tinker is a responsive CSS template provided by templatemo site. This design can be applied for any kind
+                of website. Please mention our site to your colleagues. Thank you.
+            </p>
+            <a href="#" class="buttonHome">let's start</a>
+        </section>
+        <section class="content">
+            <div class="container">
+                <div class="cardBloc">
+                    <div class="card">
+                        <div class="roundElement">
+                            <div class="icon1"></div>
+                        </div>
+                        <div class="cardTitle">
+                            smart notifications
+                        </div>
+                        <div class="cardLine"></div>
+                        <div class="cardText">Curabitur non risus fringilla libero accumsan molestie et quis justo. Cras
+                            aliquam tempor sem, vestibulum facilisis dui. Mauris malesuada porta.</div>
+                        <a href="#" class="buttonCard">continue reading</a>
+                    </div>
+                    <div class="card">
+                        <div class="roundElement">
+                            <div class="icon2"></div>
+                        </div>
+                        <div class="cardTitle">
+                            lovely web design
+                        </div>
+                        <div class="cardLine"></div>
+                        <div class="cardText">Do NOT re-distribute our template on any template download website.
+                            However, you can feel free to use this template for your commercial or non-commercial sites.
+
+                            .</div>
+                        <a href="#" class="buttonCard">continue reading</a>
+                    </div>
+
+                </div>
+                <div class="cardBloc">
+                    <div class="card">
+                        <div class="roundElement">
+                            <div class="icon3"></div>
+                        </div>
+                        <div class="cardTitle">
+                            24/7 quick support
+                        </div>
+                        <div class="cardLine"></div>
+                        <div class="cardText">Feel free to talk to us on our Facebook page if you have any kind of
+                            question or suggestion. Sed tempor mi quis rhoncus convallis.
+
+                            .</div>
+                        <a href="#" class="buttonCard">continue reading</a>
+                    </div>
+                    <div class="card">
+                        <div class="roundElement">
+                            <div class="icon4"></div>
+                        </div>
+                        <div class="cardTitle">
+                            one-click setup
+                        </div>
+                        <div class="cardLine"></div>
+                        <div class="cardText">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                            inceptos himenaeos. Praesent viverra, nunc et mollis fermentum..</div>
+                        <a href="#" class="buttonCard">continue reading</a>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+        <section class="gallery">
+            <div class="containerGallery">
+                <div class="galleryTitle">
+                    <h4>our gallery</h4>
+
+                </div>
+                <div class="galleryText">
+                    <p>In malesuada placerat ligula et bibendum. Aenean eget urna enim. Sed enim ante, bibendum nec
+                        dictum ac, gravida ac lectus.</p>
+
+                </div>
+                <div class="galleryLinks">
+                    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                    <button class="btn" onclick="filterSelection('branding')"> Branding</button>
+                    <button class="btn" onclick="filterSelection('graphic')"> Graphic</button>
+                    <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+                    <button class="btn" onclick="filterSelection('animation')"> Animation</button>
+
+                </div>
+            </div>
+            <div class="portofolio">
+                <div class="containerPortofolio">
+                    <div class="imagePortofolio filterDiv nature ">
+                        <!-- <a href="./assets/images/portfolio_big_item_01.jpg"> -->
+                        <img src="./assets/images/portfolio_item_01.jpg" alt="1ere image du portofolio">
+                        <!-- </a> -->
+                    </div>
+                    <div class="imagePortofolio filterDiv animation ">
+                        <!-- <a href="./assets/images/portfolio_big_item_02.jpg"> -->
+                        <img src="./assets/images/portfolio_item_02.jpg" alt="1ere image du portofolio">
+                        <!-- </a> -->
+                    </div>
+                    <div class="imagePortofolio filterDiv branding">
+                        <!-- <a href="./assets/images/portfolio_big_item_03.jpg"> -->
+                        <img src="./assets/images/portfolio_item_03.jpg" alt="1ere image du portofolio">
+                        </a>
+                    </div>
+                    <div class="imagePortofolio filterDiv graphic nature">
+                        <!-- <a href="./assets/images/portfolio_big_item_04.jpg"> -->
+                        <img src="./assets/images/portfolio_item_04.jpg" alt="1ere image du portofolio">
+                        <!-- </a> -->
+                    </div>
+                    <div class="imagePortofolio filterDiv branding">
+                        <!-- <a href="./assets/images/portfolio_big_item_05.jpg"> -->
+                        <img src="./assets/images/portfolio_item_05.jpg" alt="1ere image du portofolio">
+                        <!-- </a> -->
+                    </div>
+                    <div class="imagePortofolio filterDiv graphic animation">
+                        <!-- <a href="./assets/images/portfolio_big_item_06.jpg"> -->
+                        <img src="./assets/images/portfolio_item_06.jpg" alt="1ere image du portofolio">
+                        <!-- </a> -->
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <section class="carroussel">
+
+        </section>
+        <section class="testimonial">
+
+        </section>
+        <section class="blogPosts">
+            </div>
+
+        </section>
+        <section class="contactUs"></section>
+        <section class="map">
+
+        </section>
+        <section class="footer footerD">
+            <div class="footerElements footerElementsD">
+                <div class="footerTitle footerTitleD">
+                    <div class="logoFooter">
+                        <span>tinker</span>
+                    </div>
+                    <div class="footerTitleCopyright">Copyright © 2020 Your Company
+                        <br>
+                        Design: TemplateMo
+                    </div>
+                </div>
+                <div class="footerLocation">
+                    <span class="locationTitle">location</span>
+                    <ul class="locationAddresses">
+                        <li>46 Raffles Ave, <br> Singapore 039803 </li>
+                        <li>12 Republic Blvd, <br> Singapore 038975</li>
+                    </ul>
+                </div>
+                <div class="footerInfo">
+                    <span class="locationTitle">more info</span>
+                    <ul class="infoContacts">
+                        <li><em>phone</em>: 040-040-0440</li>
+                        <li><em>email</em>: tk@company.co</li>
+                    </ul>
+                </div>
+                <div class="footerSocials">
+                    <span class="locationTitle">get social with us</span>
+                    <ul>
+                        <li><a href="#"><img src="/assets/images/socialNetworks/twitter.svg" class="twitter"></i></a>
+                        </li>
+                        <li><a href="#"><img src="/assets/images/socialNetworks/facebook-f.svg" class="twitter"></i></a>
+                        </li>
+                        <li><a href="#"><img src="/assets/images/socialNetworks/google.svg" class="twitter"></i></a>
+                        </li>
+                        <li><a href="#"><img src="/assets/images/socialNetworks/rss.svg" class="twitter"></i></a></li>
+                        <li><a href="#"><img src="/assets/images/socialNetworks/dribbble.svg" class="twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+<script src="filter.js"></script>
+
+</html>

@@ -1,0 +1,374 @@
+/* Header */
+
+.header {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    height: 0px;
+    width: 100%;
+    transition: all 0.5s ease;
+    min-width: 280px;
+    z-index: 1;
+}
+
+/* Header inverted colors */
+
+.inverted {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.inverted .logoinv {
+    transition: all 0.3s ease-in-out;
+}
+
+
+.noheader {
+    height: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.noheader .logoInv {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.noheader .logo {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.noheader .burgerMenu {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+/* Logo */
+
+.logo {
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    color: var(--white);
+    font-size: 25px;
+    font-weight: 1000;
+    text-transform: uppercase;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 20 0px 0px 10px;
+    letter-spacing: 0.05rem;
+    transition: all 0.1s ease-in-out;
+}
+
+/* Logo inverted colors */
+
+.logoInv {
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    color: var(--black);
+    font-size: 25px;
+    font-weight: 1000;
+    text-transform: uppercase;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 20 0px 0px 10px;
+    letter-spacing: 0.05rem;
+}
+
+/* Logo first letter*/
+
+.logo::first-letter {
+    color: var(--yellow);
+    font-weight: 1000;
+    font-size: 35px;
+}
+
+/* Logo inverted first letter */
+
+
+.logoInv::first-letter {
+    color: var(--yellow);
+    font-weight: 1000;
+    font-size: 35px;
+}
+
+/* Nav menu */
+
+.nav {
+    margin-top: 10px;
+    width: 100%;
+    position: fixed;
+    background-color: var(--white);
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.4s ease-out;
+
+
+}
+
+.navlinks {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 100%;
+    justify-content: center;
+}
+
+.navlinks a {
+    color: var(--black);
+    transition: letter-spacing 0.2s ease-in-out;
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+}
+
+.inverted .nav .navlinks a {
+    color: var(--black);
+    transition: letter-spacing 0.2s ease-in-out;
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+}
+
+
+.navlinks li {
+    width: 100%;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    line-height: 55px;
+    opacity: 100%;
+    font-size: 13px;
+}
+
+.navlinks a:hover {
+    letter-spacing: 0.15rem;
+}
+
+
+
+
+.burgerMenu {
+    cursor: pointer;
+    float: right;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 10px 15px 10px;
+    margin: 30px 30px 0px 10px;
+    border-radius: 5px;
+    background-color: var(--yellow);
+    transition: all 0.1s ease-in-out;
+}
+
+
+
+.burgermenu-line {
+    background: var(--white);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+
+}
+
+
+
+.burgermenu-line::before,
+.burgermenu-line::after {
+    background: var(--white);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+.burgermenu-line::before {
+    top: 7px;
+}
+
+.burgermenu-line::after {
+    top: -7px;
+}
+
+.side-menu {
+    display: none;
+}
+
+
+
+.side-menu:checked~nav {
+    max-height: 100%;
+    transition: all 1s ease-out;
+}
+
+
+/* Effet sur le bouton burger lorsqu'il est ouvert  */
+
+.side-menu:checked~.burgermenu .burgermenu-line {
+    background: transparent;
+}
+
+.side-menu:checked~.burgermenu .burgermenu-line::before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.side-menu:checked~.burgermenu .burgermenu-line::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+
+
+/* DESKTOP */
+
+
+@media (min-width: 768px) {
+    .header {
+        background-color: transparent;
+        position: fixed;
+        display: flex;
+        top: 40;
+        height: 0px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease;
+    }
+
+    .inverted {
+        background-color: white;
+        position: fixed;
+        display: flex;
+        top: 0;
+        width: 100%;
+        height: 80px;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .inverted .logoinv {
+        transition: all 0.3s ease-in-out;
+    }
+
+
+    .noheader {
+        height: 0;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .noheader .logoInv {
+        opacity: 0;
+        transition: opacity 0.4s ease-in-out;
+    }
+
+    .noheader .logo {
+        opacity: 0;
+        transition: opacity 0.4s ease-in-out;
+    }
+
+    .noheader .nav .navlinks a {
+        opacity: 0;
+        transition: opacity 0.4s ease-in-out;
+    }
+
+
+    .noheader .burgerMenu {
+        opacity: 0;
+        transition: opacity 0.4s ease-in-out;
+    }
+
+    /* Logo */
+
+    .logo {
+        font-family: 'Open Sans', sans-serif;
+        display: inline-block;
+        color: var(--white);
+        font-size: 25px;
+        font-weight: 1000;
+        text-transform: uppercase;
+        margin-left: 10px;
+        padding: 0 0 0 10px;
+        letter-spacing: 0.05rem;
+    }
+
+    /* Logo inverted colors */
+
+    .logoInv {
+        font-family: 'Open Sans', sans-serif;
+        display: inline-block;
+        color: var(--black);
+        font-size: 25px;
+        font-weight: 1000;
+        text-transform: uppercase;
+        margin-left: 10px;
+        padding: 0 0 0 10px;
+        letter-spacing: 0.05rem;
+    }
+
+    .nav {
+        display: flex;
+        position: static;
+        margin-left: auto;
+        background-color: transparent;
+        transition: none;
+        max-height: none !important;
+        width: unset;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    .navlinks {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        height: auto;
+    }
+
+
+    .navlinks li {
+        border-bottom: none;
+        text-align: left;
+        line-height: normal;
+        padding: 0px 50px 0px 0px;
+        opacity: 100%;
+        width: auto;
+    }
+
+    .navlinks a {
+        font-size: 13px;
+        color: var(--white);
+    }
+
+    .navlinks a:hover {
+        background-color: transparent;
+        color: var(--gray);
+
+    }
+
+    .burgermenu {
+        display: none;
+    }
+
+    .side-menu {
+        display: none;
+    }
+
+    .side-menu:not(:checked)~nav {
+        max-height: 100%;
+        transition: all 0s;
+    }
+}

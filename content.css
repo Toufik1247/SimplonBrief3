@@ -1,0 +1,127 @@
+.content {
+    min-width: 280px;
+    padding: 150px 0px;
+    background-image: url(./assets/images/about-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: auto;
+
+}
+
+
+
+.cardBloc {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: auto;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    width: 280px;
+    min-width: 200px;
+    background-color: transparent;
+    margin: 20px;
+}
+
+.roundElement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--yellow);
+    width: 125px;
+    height: 125px;
+    margin: 15px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.icon1 {
+    background-image: url(./assets/images/service_icon_01.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.icon2 {
+    background-image: url(./assets/images/service_icon_02.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.icon3 {
+    background-image: url(./assets/images/service_icon_03.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.icon4 {
+    background-image: url(./assets/images/service_icon_04.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+.cardTitle {
+    text-transform: capitalize;
+    color: var(--white);
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    line-height: 70px;
+}
+
+.cardLine {
+    width: 80%;
+    border-bottom: 1px solid white;
+    margin: 2% 0 2% 0;
+}
+
+.cardText {
+    text-align: center;
+    margin: 15px;
+    color: white;
+    font-size: 14px;
+
+}
+
+.buttonCard {
+    background-color: var(--blue);
+    /* Green */
+    border-radius: 20px;
+    color: var(--white);
+    padding: 12px 15px 12px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 20px;
+}
