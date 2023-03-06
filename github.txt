@@ -1,0 +1,58 @@
+Voici les étapes pour mettre votre projet sur GitHub et commencer à utiliser Git :
+
+Créer un compte GitHub si vous n'en avez pas déjà un.
+
+Créer un nouveau référentiel (repository) dans GitHub en cliquant sur le bouton "New Repository".
+
+Donner un nom à votre référentiel et ajouter une description si vous le souhaitez.
+
+Cocher la case "Initialize this repository with a README" pour créer un fichier README.md vide dans votre référentiel.
+
+
+///Spécifique à un projet React
+Créer un fichier .gitignore à la racine de votre projet React pour ignorer les fichiers et les dossiers qui ne doivent pas être versionnés.
+Vous pouvez utiliser le fichier .gitignore recommandé pour les projets React disponibles ici : https://github.com/facebook/create-react-app/blob/master/.gitignore.
+/////
+
+
+Ouvrir un terminal dans le répertoire de votre projet et initialiser le référentiel Git avec la commande suivante : "git init"
+
+Ajouter tous les fichiers de votre projet à l'index de Git avec la commande suivante : "git add ."
+
+Créer un commit avec un message décrivant les modifications apportées à votre projet avec la commande suivante : "git commit -m "Premier commit"".
+
+Ajouter votre référentiel GitHub comme un référentiel distant avec la commande suivante : "git remote add origin <URL de votre référentiel GitHub>".
+Vous pouvez trouver l'URL de votre référentiel GitHub en cliquant sur le bouton "Clone or download" dans votre référentiel GitHub.
+
+Pousser vos modifications sur GitHub avec la commande suivante : "git push -u origin master".
+Cela pousse votre premier commit sur la branche principale de votre référentiel GitHub.
+
+
+
+
+
+Maintenant que votre projet est sur GitHub, voici quelques bonnes pratiques pour utiliser Git :
+
+Créer une nouvelle branche pour chaque fonctionnalité que vous développez avec la commande suivante : 
+
+"git checkout -b ma-nouvelle-branche" 
+
+Cela crée une nouvelle branche à partir de la branche actuelle (généralement la branche master) et bascule sur cette nouvelle branche.
+
+
+Effectuer des commits atomiques pour chaque modification que vous apportez à votre code avec la commande suivante : "git commit -m "Message de commit"".
+Un commit atomique est un commit qui ne contient qu'un seul changement logique à votre code.
+
+
+Mettre à jour votre branche de travail avec les dernières modifications de la branche master avec la commande suivante : "git pull origin master" 
+Cela fusionne les modifications de la branche master dans votre branche de travail.
+
+Fusionner votre branche de travail dans la branche master avec la commande suivante : "git merge ma-nouvelle-branche"
+Cela fusionne votre branche de travail dans la branche master.
+
+Pousser vos modifications sur GitHub avec la commande suivante : "git push origin ma-nouvelle-branche"
+Cela pousse votre branche de travail sur GitHub pour que vous puissiez créer une pull request.
+
+
+
+
