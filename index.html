@@ -10,18 +10,23 @@
 
 <body>
     <header class="header">
-        <a href="#" class="logo">Tinker</a>
-        <input class="side-menu" type="checkbox" id="side-menu" />
-        <label class="burgerMenu" for="side-menu"><span class="burgerMenu-line"></span></label>
-        <nav class="nav">
-            <ul class="navlinks">
-                <li><a href="#">home</a></li>
-                <li><a href="#">about us</a> </li>
-                <li><a href="#">portofolio</a></li>
-                <li><a href="#">blog</a></li>
-                <li><a href="#">contact us</a></li>
-            </ul>
-        </nav>
+        <div class="subHeader">
+            <a href="#" class="logo">Tinker</a>
+            <input class="side-menu" type="checkbox" id="side-menu" />
+            <label class="burgerMenu" for="side-menu"><span class="burgerMenu-line"></span></label>
+            <nav class="nav">
+                <ul class="navlinks">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about us</a> </li>
+                    <li><a href="#">portofolio</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">contact us</a></li>
+                </ul>
+            </nav>
+
+
+        </div>
+
     </header>
     <main>
         <section class="home">
@@ -102,24 +107,29 @@
 
         </section>
         <section class="gallery">
-            <div class="containerGallery">
-                <div class="galleryTitle">
-                    <h4>our gallery</h4>
+            <div class="sub">
+                <div class="containerGallery">
+                    <div class="galleryTitle">
+                        <h4>our gallery</h4>
+
+                    </div>
+                    <div class="galleryText">
+                        <p>In malesuada placerat ligula et bibendum. Aenean eget urna enim. Sed enim ante, bibendum nec
+                            dictum ac, gravida ac lectus.</p>
+
+                    </div>
+                    <div class="galleryLinks">
+                        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                        <button class="btn" onclick="filterSelection('branding')"> Branding</button>
+                        <button class="btn" onclick="filterSelection('graphic')"> Graphic</button>
+                        <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+                        <button class="btn" onclick="filterSelection('animation')"> Animation</button>
+
+                    </div>
+
 
                 </div>
-                <div class="galleryText">
-                    <p>In malesuada placerat ligula et bibendum. Aenean eget urna enim. Sed enim ante, bibendum nec
-                        dictum ac, gravida ac lectus.</p>
 
-                </div>
-                <div class="galleryLinks">
-                    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-                    <button class="btn" onclick="filterSelection('branding')"> Branding</button>
-                    <button class="btn" onclick="filterSelection('graphic')"> Graphic</button>
-                    <button class="btn" onclick="filterSelection('nature')"> Nature</button>
-                    <button class="btn" onclick="filterSelection('animation')"> Animation</button>
-
-                </div>
             </div>
             <div class="portofolio">
                 <div class="containerPortofolio">

@@ -16,7 +16,6 @@
     max-width: 765px;
     height: 80%;
     background-color: var(--blue);
-    display: flex;
     justify-content: center;
     align-items: center;
     padding: 50px 0;
@@ -216,4 +215,83 @@
 
 
 
+}
+
+@media screen and (min-width: 1000px) {
+    .gallery {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        width: 100%;
+        height: auto;
+        min-width: 280px;
+    }
+
+    .sub {
+        width: 30%;
+        background-color: var(--blue);
+        display: flex;
+        align-items: right;
+        justify-content: right;
+    }
+
+    .containerGallery {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-width: 280px;
+        max-width: 450px;
+        height: 100%;
+        background-color: var(--blue);
+        justify-content: left;
+        align-items: left;
+        padding: 200px 0;
+        /* margin: 10% 5% 10% 5% */
+    }
+    .galleryTitle {
+        display: flex;
+        text-align: left;
+        align-items: left;
+        justify-content: left;
+        width: 100%;
+        padding: 0 50px 0 50px;
+        box-sizing: border-box;
+    }
+    
+    .galleryText>p {
+        display: flex;
+        text-align: left;
+        align-items: left;
+        justify-content: left;
+        width: 100%;
+        padding: 0 50px 0 50px;
+    }
+
+    .galleryLinks {
+        width: 100%;
+        padding-top: 50px;
+        padding-left: 50px;
+    }
+
+    .btn {
+        text-align: left;
+        padding: 15px 35px;
+
+    }
+
+    .portofolio {
+        background-color: var(--white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-width: 800px;
+        padding: 10px 0;
+        max-width: 1250px;
+    
+    
+    }
+    
 }

@@ -8,6 +8,7 @@
     width: 100%;
     transition: all 0.5s ease;
     min-width: 280px;
+    
     z-index: 1;
 }
 
@@ -246,6 +247,14 @@
         z-index: 1;
     }
 
+    .subHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1400px;
+    }
+
     .inverted {
         background-color: white;
         position: fixed;
@@ -300,6 +309,8 @@
         font-weight: 1000;
         text-transform: uppercase;
         margin-left: 10px;
+        margin-left: auto;
+        margin-right: auto;
         padding: 0 0 0 10px;
         letter-spacing: 0.05rem;
     }
@@ -313,15 +324,18 @@
         font-size: 25px;
         font-weight: 1000;
         text-transform: uppercase;
-        margin-left: 10px;
+        margin-left: auto;
+        margin-right: auto;
         padding: 0 0 0 10px;
         letter-spacing: 0.05rem;
+
     }
 
     .nav {
         display: flex;
         position: static;
         margin-left: auto;
+        margin-right: auto;
         background-color: transparent;
         transition: none;
         max-height: none !important;
