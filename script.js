@@ -59,13 +59,13 @@ window.addEventListener("scroll", function () {
                 if (window.scrollY >= hideTrigger || window.pageYOffset >= hideTrigger) {
                     if (headerInverted) {
                         document.getElementsByClassName(headerInv)[0].classList.add(noheader);
-                    } 
+                    }
                     if (headerNormal) {
                         document.getElementsByClassName(header)[0].classList.add(noheader);
                     }
                     if (logoInverted) {
                         document.getElementsByClassName(logoInv)[0].classList.add(nologo);
-                    } 
+                    }
                     if (logoNormal) {
                         document.getElementsByClassName(logo)[0].classList.add(nologo);
                     }

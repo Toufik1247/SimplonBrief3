@@ -158,7 +158,6 @@
 .burgerMenu {
     cursor: pointer;
     float: right;
-    display: inline-block;
     align-items: center;
     justify-content: center;
     padding: 15px 10px 15px 10px;
@@ -244,6 +243,7 @@
         align-items: center;
         justify-content: center;
         transition: all 0.4s ease;
+        z-index: 1;
     }
 
     .inverted {
@@ -256,6 +256,7 @@
         align-items: center;
         justify-content: center;
         transition: all 0.4s ease-in-out;
+        z-index: 1;
     }
 
     .inverted .logoinv {
