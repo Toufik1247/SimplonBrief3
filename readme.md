@@ -1,4 +1,4 @@
-# ## # Contexte du projet
+# Contexte du projet
 
 Suite du brief #2 Réaliser la maquette d'un site simple avec Figma.
 
@@ -32,7 +32,6 @@ Le client vous rappel qu’il est très important que le site soit adaptable à 
 
 Réaliser en Javascript, l'un des fonctionnalités dynamique du site au choix :
 
-
 | Tâche à réaliser  | Réalisée |
 | ---------| ---------|
 | L'effet sur la navbar lorsque l'on scroll | OUI |
@@ -49,5 +48,6 @@ Réaliser en Javascript, l'un des fonctionnalités dynamique du site au choix :
 
 
 # Livrables
+
 - Un dépôt Git contenant le projet au complet
 - Un rendu Simplonline avec un lien vers le dépôt Git
