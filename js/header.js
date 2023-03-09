@@ -13,7 +13,7 @@ let scrollTimeout;
 window.addEventListener("scroll", function () {
     clearTimeout(scrollTimeout);
     scrollTimeout = setTimeout(function () {
-        // Definition des letiables pour checker la presence de la class :
+        // Definition des variables pour checker la presence de la class :
         let headerNormal = document.getElementsByClassName(header)[0];
         let headerInverted = document.getElementsByClassName(headerInv)[0];
         let logoNormal = document.getElementsByClassName(logo)[0];

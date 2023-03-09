@@ -1,7 +1,7 @@
 .content {
     min-width: 280px;
     padding: 150px 0px;
-    background-image: url(./assets/images/about-bg.jpg);
+    background-image: url(../assets/images/about-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -9,24 +9,19 @@
     justify-content: center;
 }
 
-
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     width: auto;
-
 }
-
-
 
 .cardBloc {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: auto;
-
 }
 
 .card {
@@ -36,7 +31,7 @@
     align-items: center;
     justify-content: center;
     height: 450px;
-    width: 280px;
+    width: 260px;
     min-width: 200px;
     background-color: transparent;
     margin: 20px;
@@ -55,7 +50,7 @@
 }
 
 .icon1 {
-    background-image: url(./assets/images/service_icon_01.png);
+    background-image: url(../assets/images/service_icon_01.png);
     background-repeat: no-repeat;
     background-position: center;
     height: 100%;
@@ -63,7 +58,7 @@
 }
 
 .icon2 {
-    background-image: url(./assets/images/service_icon_02.png);
+    background-image: url(../assets/images/service_icon_02.png);
     background-repeat: no-repeat;
     background-position: center;
     height: 100%;
@@ -71,7 +66,7 @@
 }
 
 .icon3 {
-    background-image: url(./assets/images/service_icon_03.png);
+    background-image: url(../assets/images/service_icon_03.png);
     background-repeat: no-repeat;
     background-position: center;
     height: 100%;
@@ -79,13 +74,12 @@
 }
 
 .icon4 {
-    background-image: url(./assets/images/service_icon_04.png);
+    background-image: url(../assets/images/service_icon_04.png);
     background-repeat: no-repeat;
     background-position: center;
     height: 100%;
     width: 100%;
 }
-
 
 .cardTitle {
     text-transform: capitalize;
@@ -93,12 +87,12 @@
     font-size: 17px;
     font-weight: 600;
     letter-spacing: 0.05rem;
-    line-height: 70px;
+    line-height: 50px;
 }
 
 .cardLine {
     width: 80%;
-    border-bottom: 1px solid white;
+    bottom: 1px solid white;
     margin: 2% 0 2% 0;
 }
 
@@ -106,13 +100,14 @@
     text-align: center;
     margin: 15px;
     color: white;
+    height: 80px;
     font-size: 14px;
-
+    border-top: 1px solid rgba(250, 250, 250, 0.7);
+    padding-top: 30px;
 }
 
 .buttonCard {
     background-color: var(--blue);
-    /* Green */
     border-radius: 20px;
     color: var(--white);
     padding: 12px 15px 12px 15px;

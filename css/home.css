@@ -9,7 +9,6 @@ h1 {
     display: block;
     text-align: center;
     box-sizing: border-box;
-
 }
 
 .yellowWord {
@@ -24,7 +23,7 @@ h1 {
     font-weight: 700;
 }
 
-.homep {
+.homeP {
     display: block;
     color: white;
     font-size: 14px;
@@ -54,22 +53,18 @@ h1 {
     min-width: 280px;
     padding-top: 35vh;
     text-align: center;
-    background-image: url(./assets/images/banner_bg.jpg);
+    background-image: url(../assets/images/banner_bg.jpg);
     vertical-align: middle;
     background-position: center calc(50% + 0px);
     background-size: cover;
     min-height: 100vh;
     box-sizing: border-box;
-
 }
-
 
 @media (min-width: 768px) {
 
 
     p {
         margin: 0 10% 10px 10%;
-
     }
-
 }

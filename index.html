@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,21 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Pure CSS Menu</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
         <div class="subHeader">
             <a href="#" class="logo">Tinker</a>
-            <input class="side-menu" type="checkbox" id="side-menu" />
+            <input class="side-menu" type="checkbox" id="side-menu">
             <label class="burgerMenu" for="side-menu"><span class="burgerMenu-line"></span></label>
             <nav class="nav">
                 <ul class="navlinks">
                     <li><a href="#">home</a></li>
-                    <li><a href="#">about us</a> </li>
-                    <li><a href="#">portofolio</a></li>
-                    <li><a href="#">blog</a></li>
-                    <li><a href="#">contact us</a></li>
+                    <li><a href="#about">about us</a> </li>
+                    <li><a href="#gallery">portofolio</a></li>
+                    <li><a href="#blog">blog</a></li>
+                    <li><a href="#contactUs">contact us</a></li>
                 </ul>
             </nav>
 
@@ -29,7 +35,7 @@
 
     </header>
     <main>
-        <section class="home">
+        <div class="home">
             <h1>
                 <span class="yellowWord">tinker</span>
                 <span class="blueWord">html5</span>
@@ -40,9 +46,9 @@
                 of website. Please mention our site to your colleagues. Thank you.
             </p>
             <a href="#" class="buttonHome">let's start</a>
-        </section>
-        <section class="content">
-            <div class="container">
+        </div>
+        <div class="content" id="about">
+            <div class=" container">
                 <div class="cardBloc">
                     <div class="card">
                         <div class="roundElement">
@@ -54,7 +60,7 @@
                         <div class="cardLine"></div>
                         <div class="cardText">Curabitur non risus fringilla libero accumsan molestie et quis justo. Cras
                             aliquam tempor sem, vestibulum facilisis dui. Mauris malesuada porta.</div>
-                        <a href="#" class="buttonCard">continue reading</a>
+                        <a href="#gallery" class="buttonCard">continue reading</a>
                     </div>
                     <div class="card">
                         <div class="roundElement">
@@ -68,7 +74,7 @@
                             However, you can feel free to use this template for your commercial or non-commercial sites.
 
                             .</div>
-                        <a href="#" class="buttonCard">continue reading</a>
+                        <a href="#gallery" class="buttonCard">continue reading</a>
                     </div>
 
                 </div>
@@ -85,7 +91,7 @@
                             question or suggestion. Sed tempor mi quis rhoncus convallis.
 
                             .</div>
-                        <a href="#" class="buttonCard">continue reading</a>
+                        <a href="#gallery" class="buttonCard">continue reading</a>
                     </div>
                     <div class="card">
                         <div class="roundElement">
@@ -97,7 +103,7 @@
                         <div class="cardLine"></div>
                         <div class="cardText">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
                             inceptos himenaeos. Praesent viverra, nunc et mollis fermentum..</div>
-                        <a href="#" class="buttonCard">continue reading</a>
+                        <a href="#gallery" class="buttonCard">continue reading</a>
                     </div>
 
                 </div>
@@ -105,8 +111,8 @@
 
             </div>
 
-        </section>
-        <section class="gallery">
+        </div>
+        <div class="gallery" id="gallery">
             <div class="sub">
                 <div class="containerGallery">
                     <div class="galleryTitle">
@@ -134,41 +140,29 @@
             <div class="portofolio">
                 <div class="containerPortofolio">
                     <div class="imagePortofolio filterDiv nature ">
-                        <!-- <a href="./assets/images/portfolio_big_item_01.jpg"> -->
                         <img src="./assets/images/portfolio_item_01.jpg" alt="1ere image du portofolio">
-                        <!-- </a> -->
                     </div>
                     <div class="imagePortofolio filterDiv animation ">
-                        <!-- <a href="./assets/images/portfolio_big_item_02.jpg"> -->
                         <img src="./assets/images/portfolio_item_02.jpg" alt="1ere image du portofolio">
-                        <!-- </a> -->
                     </div>
                     <div class="imagePortofolio filterDiv branding">
-                        <!-- <a href="./assets/images/portfolio_big_item_03.jpg"> -->
                         <img src="./assets/images/portfolio_item_03.jpg" alt="1ere image du portofolio">
-                        </a>
                     </div>
                     <div class="imagePortofolio filterDiv graphic nature">
-                        <!-- <a href="./assets/images/portfolio_big_item_04.jpg"> -->
                         <img src="./assets/images/portfolio_item_04.jpg" alt="1ere image du portofolio">
-                        <!-- </a> -->
                     </div>
                     <div class="imagePortofolio filterDiv branding">
-                        <!-- <a href="./assets/images/portfolio_big_item_05.jpg"> -->
                         <img src="./assets/images/portfolio_item_05.jpg" alt="1ere image du portofolio">
-                        <!-- </a> -->
                     </div>
                     <div class="imagePortofolio filterDiv graphic animation">
-                        <!-- <a href="./assets/images/portfolio_big_item_06.jpg"> -->
                         <img src="./assets/images/portfolio_item_06.jpg" alt="1ere image du portofolio">
-                        <!-- </a> -->
                     </div>
                 </div>
             </div>
 
 
-        </section>
-        <section class="carousel-container">
+        </div>
+        <div class="carousel-container">
 
 
 
@@ -230,88 +224,124 @@
 
 
 
+        </div>
+        <div class="blogPosts" id="blog">
+            <div class="blogContainer">
+                <div class="blogPostsMenu">
+                    <div class="blogPostsMenuContainer">
+                        <div class="blogPostsMenuElements">
+                            <div class="blogPostsTitle">
+                                <h4>
+                                    our blog posts
 
-
-            <!-- <div class="carousel">
-                <ul class="slides">
-                    <input type="radio" name="radio-buttons" id="slideElement1" checked />
-                    <li class="slide-container">
-                        <div class="slide-image slide-image-right image-left">
-
-
-                            <div class="carousel-controls">
-                                <label for="slideElement3" class="prev-slide">
-                                    <span>&lsaquo;</span>
-                                </label>
-                                <label for="slideElement2" class="next-slide">
-                                    <span>&rsaquo;</span>
-                                </label>
-                            </div>
-                    </li>
-                    <input type="radio" name="radio-buttons" id="slideElement2" />
-                    <li class="slide-container">
-                        <div class="slide-image slide-image-right image-left">
-                            <div class="slideElement">
-                                <p> architecto tempora itaque id quo iure obcaecati iusto perferendis? Molestias
-                                    molestiae, quis repudiandae maiores ducimus laudantium doloremque fugiat, illo
-                                    nemo maxime perferendis provident ab esse dolorem. Nulla, nisi.</p>
+                                </h4>
 
                             </div>
-                        </div>
-                        <div class="carousel-controls">
-                            <label for="slideElement1" class="prev-slide">
-                                <span>&lsaquo;</span>
-                            </label>
-                            <label for="slideElement3" class="next-slide">
-                                <span>&rsaquo;</span>
-                            </label>
-                        </div>
-                    </li>
-                    <input type="radio" name="radio-buttons" id="slideElement3" />
-                    <li class="slide-container">
-                        <div class="slide-image slide-image-right image-left">
-                            <div class="slideElement">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dolorem nihil
-                                    distinctio suscipit nulla impedit, maxime numquam illo sed nam, mollitia quasi
-                                    amet possimus voluptate vero laborum libero modi labore dolore inventore
+                            <div class="blogPostsText">
+                                <p>
+                                    Nam vulputate elementum nulla, sit amet congue ipsum malesuada pretium. Vivamus vel
+                                    gravida quam.
                                 </p>
 
                             </div>
+                            <div class="blogPostsLinks">
+                                <button class="btnBlog" data-image="1" id="blogImage1"> Nulla eget convallis
+                                    augue</button>
+                                <button class="btnBlog" data-image="2" id="blogImage2"> Quisque ultricies
+                                    maximus</button>
+                                <button class="btnBlog" data-image="3" id="blogImage3"> Sed vel elit et
+                                    lorem</button>
+                                <button class="btnBlog" data-image="4" id="blogImage4"> Vivamus purus
+                                    neque</button>
+                            </div>
                         </div>
-                        <div class="carousel-controls">
-                            <label for="slideElement2" class="prev-slide">
-                                <span>&lsaquo;</span>
-                            </label>
-                            <label for="slideElement1" class="next-slide">
-                                <span>&rsaquo;</span>
-                            </label>
-                        </div>
-                    </li>
-                    <div class="carousel-dots">
-                        <label for="slideElement1" class="carousel-dot" id="slideElement1-dot-1"></label>
-                        <label for="slideElement2" class="carousel-dot" id="slideElement2-dot-2"></label>
-                        <label for="slideElement3" class="carousel-dot" id="slideElement3-dot-3"></label>
                     </div>
-                </ul>
-            </div> -->
 
+                </div>
+                <div class="blogPostsArticles">
+                    <div class="blogArticlesWrapper">
+                        <div class="blogArticlesPics">
+                            <img src="/assets/images/blog_item_01.jpg" alt="image blog number 1" class="blogImage1">
+                            <img src="/assets/images/blog_item_02.jpg" alt="image blog number 2" class="blogImage2">
+                            <img src="/assets/images/blog_item_03.jpg" alt="image blog number 3" class="blogImage3">
+                            <img src="/assets/images/blog_item_04.jpg" alt="image blog number 4" class="blogImage4">
+                        </div>
+                        <div class="blogArticlesDescWrapper1" id="blogArticlesDescWrapper1">
+                            <div class="blogArticlesDesc">
+                                <h4>Nulla eget convallis augue</h4>
+                                <a href="#">Digital Marketing / Honey 21 September 2020</a>
+                                <p>Donec interdum scelerisque auctor. Nulla id lorem auctor, bibendum lectus elementum,
+                                    porta felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                                    inceptos himenaeos.</p>
+                            </div>
 
+                        </div>
+                        <div class="blogArticlesDescWrapper2" id="blogArticlesDescWrapper2">
+                            <div class="blogArticlesDesc">
+                                <h4>Quisque ultricies maximus</h4>
+                                <a href="#">Branding / David / 24 August 2020</a>
+                                <p>Etiam fringilla posuere pretium. Maecenas tempor pellentesque elit in dapibus.
+                                    Curabitur viverra urna sem, ut sollicitudin sem congue vel. Donec fringilla augue in
+                                    justo molestie fermentum quis ac mi.</p>
+                            </div>
 
-        </section>
-        <section class="testimonial">
+                        </div>
+                        <div class="blogArticlesDescWrapper3" id="blogArticlesDescWrapper3">
+                            <div class="blogArticlesDesc">
+                                <h4>Sed vel elit et lorem</h4>
+                                <a href="#">Web Design / William / 18 July 2020</a>
+                                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                                    Curae; Fusce id ipsum porta, dictum sem sed, bibendum quam. Maecenas mattis risus
+                                    eget orci rhoncus.</p>
+                            </div>
 
-        </section>
-        <section class="blogPosts">
+                        </div>
+                        <div class="blogArticlesDescWrapper4" id="blogArticlesDescWrapper4">
+                            <div class="blogArticlesDesc">
+                                <h4>Vivamus purus neque</h4>
+                                <a href="#">E-Commerce / George / 14 July 2020</a>
+                                <p>Aliquam erat volutpat. Nulla at nunc nec ante rutrum congue id in diam. Nulla at
+                                    lectus non turpis placerat volutpat lacinia ut mi. Quisque ultricies maximus justo a
+                                    blandit. Donec sit amet commodo arcu. Sed sit amet iaculis mi, vel fermentum nisi.
+                                    Morbi dui enim, vestibulum non accumsan ac, tempor non nisl.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
 
-        </section>
-        <section class="contactUs"></section>
-        <section class="map">
+        </div>
+        <div class="contactUs" id="contactUs">
+            <div class="containerContact">
+                <div class="containerTitle">
+                    <h4>contact us</h4>
 
-        </section>
-        <section class="footer footerD">
-            <div class="footerElements footerElementsD">
-                <div class="footerTitle footerTitleD">
+                </div>
+                <div class="containerText">
+                    <p>Nunc posuere non quam at pharetra. Mauris tincidunt purus vel ultrices malesuada. Integer euismod
+                        erat ut nulla ultrices, ut auctor eros feugiat.
+
+                    </p>
+
+                </div>
+                <a href="#" class="buttonContact">send us a message</a>
+
+            </div>
+
+
+
+
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7895.485196115994!2d103.85995441789784!3d1.2880401763270322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7fb4e58ad9cd826e!2sSingapore+Flyer!5e0!3m2!1sen!2sth!4v1505825620371"
+                height="500" style="border:0" allowfullscreen=""></iframe>
+
+        </div>
+        <div class="footer">
+            <div class="footerElements">
+                <div class="footerTitle">
                     <div class="logoFooter">
                         <span>tinker</span>
                     </div>
@@ -337,23 +367,30 @@
                 <div class="footerSocials">
                     <span class="locationTitle">get social with us</span>
                     <ul>
-                        <li><a href="#"><img src="/assets/images/socialNetworks/twitter.svg" class="twitter"></i></a>
+                        <li><a href="#"><img src="/assets/images/socialNetworks/twitter.svg" alt="twitter icon"
+                                    class="twitter"></a>
                         </li>
-                        <li><a href="#"><img src="/assets/images/socialNetworks/facebook-f.svg" class="twitter"></i></a>
+                        <li><a href="#"><img src="/assets/images/socialNetworks/facebook-f.svg" alt="facebook icon"
+                                    class="twitter"></a>
                         </li>
-                        <li><a href="#"><img src="/assets/images/socialNetworks/google.svg" class="twitter"></i></a>
+                        <li><a href="#"><img src="/assets/images/socialNetworks/google.svg" alt="google icon"
+                                    class="twitter"></a>
                         </li>
-                        <li><a href="#"><img src="/assets/images/socialNetworks/rss.svg" class="twitter"></i></a></li>
-                        <li><a href="#"><img src="/assets/images/socialNetworks/dribbble.svg" class="twitter"></i></a>
+                        <li><a href="#"><img src="/assets/images/socialNetworks/rss.svg" alt="rss icon"
+                                    class="twitter"></a>
+                        </li>
+                        <li><a href="#"><img src="/assets/images/socialNetworks/dribbble.svg" alt="dribble icon"
+                                    class="twitter"></a>
                         </li>
                     </ul>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
+    <script src="./js/header.js"></script>
+    <script src="./js/filter.js"></script>
+    <script src="./js/carroussel.js"></script>
+    <script src="./js/blog.js"></script>
 </body>
-<script src="script.js"></script>
-<script src="filter.js"></script>
-<script src="carroussel.js"></script>
 
 </html>

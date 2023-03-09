@@ -1,4 +1,4 @@
-const delay = 3000; //ms
+const delay = 3000;
 
 const slides = document.querySelector(".slides");
 const slidesCount = slides.childElementCount;
@@ -15,7 +15,7 @@ function changeSlide(next = true) {
 
     slides.style.left = current + "%";
 
-    // Update radio buttons
+    // Mise à jour des boutons radio
     updateRadioButtons();
 }
 
@@ -25,7 +25,7 @@ const restart = function () {
     autoChange = setInterval(changeSlide, delay);
 };
 
-// Controls
+// Boutons
 const radioButtons = document.querySelectorAll('input[name="slide-control"]');
 radioButtons.forEach((button) => {
     button.addEventListener("click", function () {
@@ -36,12 +36,12 @@ radioButtons.forEach((button) => {
     });
 });
 
-// Disable autoChange when radio button is clicked
+// Desactive autochange quand un bouton est cliqué
 slides.addEventListener("click", function () {
     clearInterval(autoChange);
 });
 
-// Update radio buttons based on current slide
+// Fais correspondre le bouton à la slide courante
 function updateRadioButtons() {
 
     const radioButtons = document.querySelectorAll('input[name="slide-control"]');

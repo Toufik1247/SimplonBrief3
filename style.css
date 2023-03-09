@@ -1,15 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-@import url(./header.css);
-@import url(./home.css);
-@import url(./content.css);
-@import url(./gallery.css);
-@import url(./footer.css);
-@import url(./caroussel.css);
+@import url(./css/header.css);
+@import url(./css/home.css);
+@import url(./css/content.css);
+@import url(./css/gallery.css);
+@import url(./css/caroussel.css);
+@import url(./css/blogposts.css);
+@import url(./css/contact.css);
+@import url(./css/map.css);
+@import url(./css/footer.css);
 
 :root {
     --white: #f9f9f9;
     --black: #36383F;
     --gray: #373a3c;
+    --gray2: #596065;
     --yellow: #f7c552;
     --yellow2: #f89624;
     --blue: #3dc1cd;
@@ -24,7 +28,6 @@
 
 body {
     color: black;
-    /* min-width: 280px; */
 }
 
 a {
@@ -34,3 +37,8 @@ a {
 ul {
     list-style: none;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+

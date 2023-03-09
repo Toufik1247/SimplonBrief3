@@ -3,8 +3,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 1902px;
+    margin: 0 auto;
 }
-
 
 .carousel {
     background-color: var(--yellow);
@@ -31,7 +32,6 @@
     transform: translateX(-50%);
     justify-content: center;
     width: 100%;
-
     transition: all ease 0.5s;
 }
 
@@ -63,10 +63,6 @@
     display: none;
 }
 
-
-
-
-
 .carousel .slides {
     position: absolute;
     top: 50%;
@@ -82,7 +78,6 @@
     height: auto;
     display: flex;
     flex-direction: column;
-
 }
 
 .carousel .slides .slide p {
@@ -129,5 +124,4 @@
     height: auto;
     border-radius: 10px;
     width: auto;
-
 }

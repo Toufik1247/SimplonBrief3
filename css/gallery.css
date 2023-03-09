@@ -13,13 +13,12 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 765px;
+    max-width: 2800px;
     height: 80%;
     background-color: var(--blue);
     justify-content: center;
     align-items: center;
     padding: 50px 0;
-    /* margin: 10% 5% 10% 5% */
 }
 
 .galleryTitle {
@@ -29,7 +28,6 @@
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 1px;
-    border-bottom: 1px solid rgba(250, 250, 250, 0.9);
     line-height: 60px;
     margin-bottom: 30px;
     width: 250px;
@@ -38,6 +36,11 @@
     justify-content: center;
 }
 
+.galleryTitle>h4 {
+    border-bottom: 1px solid rgba(250, 250, 250, 0.9);
+    width: 90%;
+    text-align: center;
+}
 
 .galleryText>p {
     display: block;
@@ -55,9 +58,6 @@
     flex-direction: column;
 }
 
-
-
-
 .portofolio {
     background-color: var(--white);
     display: flex;
@@ -67,10 +67,7 @@
     min-width: 280px;
     padding: 10px 0;
     max-width: 1250px;
-
-
 }
-
 
 .containerPortofolio {
     background-color: rgb(255, 255, 255);
@@ -83,7 +80,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-
 }
 
 .imagePortofolio img {
@@ -93,9 +89,7 @@
     text-align: center;
     width: 100%;
     height: 100%;
-
 }
-
 
 .containerPortofolio {
     display: flex;
@@ -103,7 +97,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-
 }
 
 .filterDiv {
@@ -112,15 +105,12 @@
     transition: all 0.6s ease, transform 0.2s ease;
 }
 
-
 .hide {
     opacity: 0;
     width: 0;
     transform: translateX(-300px);
     transition: all 0.3s ease, transform 0.3s ease;
-
 }
-
 
 .show {
     padding: 15px;
@@ -134,8 +124,6 @@
     padding: 15px;
 }
 
-
-/* Style the buttons */
 .btn {
     border: none;
     outline: none;
@@ -146,10 +134,8 @@
     text-transform: capitalize;
     font-size: 15px;
     font-weight: 600;
-
 }
 
-/* Add a light grey background on mouse-over */
 .btn:hover {
     color: var(--yellow);
 }
@@ -166,9 +152,7 @@
         min-width: 280px;
         padding: 10px 0;
         max-width: 1250px;
-
     }
-
 
     .containerPortofolio {
         display: flex;
@@ -183,15 +167,11 @@
         padding-top: 20px;
     }
 
-
-
     .filterDiv {
         opacity: 1;
         transform: translatex(0);
         transition: transform 0.8s ease, opacity 0.5s ease;
     }
-
-
 
     .hide {
         opacity: 0;
@@ -199,22 +179,16 @@
         transition: transform 0.8s ease, opacity 0.5s ease;
     }
 
-
-
     .show {
         padding: 0 15px;
         opacity: 1;
         transform: translateY(0);
         transition: all 0.8s ease, opacity 0.5s ease;
-
     }
 
     .default {
         padding: 0;
     }
-
-
-
 }
 
 @media screen and (min-width: 1000px) {
@@ -227,6 +201,7 @@
         width: 100%;
         height: auto;
         min-width: 280px;
+        max-width: 2170px;
     }
 
     .sub {
@@ -240,7 +215,7 @@
     .containerGallery {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 50%;
         min-width: 280px;
         max-width: 450px;
         height: 100%;
@@ -248,8 +223,8 @@
         justify-content: left;
         align-items: left;
         padding: 200px 0;
-        /* margin: 10% 5% 10% 5% */
     }
+
     .galleryTitle {
         display: flex;
         text-align: left;
@@ -259,7 +234,7 @@
         padding: 0 50px 0 50px;
         box-sizing: border-box;
     }
-    
+
     .galleryText>p {
         display: flex;
         text-align: left;
@@ -283,15 +258,13 @@
 
     .portofolio {
         background-color: var(--white);
+        width: 70%;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: left;
         text-align: center;
         min-width: 800px;
         padding: 10px 0;
         max-width: 1250px;
-    
-    
     }
-    
 }

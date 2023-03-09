@@ -1,0 +1,568 @@
+@media (max-width: 1050px) {
+
+    .blogPosts {
+        min-width: 280px;
+        padding: 0px 0px;
+        background-image: url(../assets/images/blog-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .blogContainer {
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .blogPostsMenu {
+        background-color: rgba(0, 0, 0, 0.55);
+        text-align: center;
+        padding: 40px 0;
+        display: flex;
+        width: 100%;
+        max-width: 765px;
+        height: 600px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blogPostsMenuContainer {
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        height: 100%;
+        width: 100%;
+    }
+
+    .blogPostsMenuElements {
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .blogPostsTitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .blogPostsTitle>h4 {
+        text-transform: uppercase;
+        color: var(--white);
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin-right: 0;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(250, 250, 250, 0.7);
+        width: 30%;
+    }
+
+    .blogPostsText {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+    }
+
+    .blogPostsText>p {
+        display: block;
+        color: white;
+        font-size: 14px;
+        width: 100%;
+        line-height: 24px;
+        padding: 20px 0px 50px 0;
+        text-align: center;
+
+    }
+
+    .blogPostsLinks {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btnBlog {
+        padding: 15px 5px;
+        margin: 15px 0;
+        width: 80%;
+        max-width: 500px;
+        background-color: var(--white);
+        text-transform: capitalize;
+        color: var(--black);
+        font-size: 15px;
+        font-weight: 500;
+        cursor: pointer;
+        border: none;
+        outline: none;
+    }
+
+    .btnBlog:hover {
+        color: var(--yellow);
+    }
+
+    .hover,
+    .btnBlog:hover {
+        color: var(--yellow);
+    }
+
+    .blogPostsArticles {
+        background-color: transparent;
+        height: 600px;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .blogArticlesWrapper {
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 80%;
+        width: auto;
+    }
+
+    .blogArticlesPics {
+        background-color: transparent;
+        height: 100%;
+        min-height: 250px;
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .blogArticlesDescWrapper1,
+    .blogArticlesDescWrapper2,
+    .blogArticlesDescWrapper3,
+    .blogArticlesDescWrapper4 {
+        background-color: var(--white);
+        height: auto;
+        width: auto;
+        display: none;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .blogImage1,
+    .blogImage2,
+    .blogImage3,
+    .blogImage4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .blogArticlesDesc {
+        padding: 25px;
+    }
+
+    .blogArticlesDesc>h4 {
+        color: var(--black);
+        margin: 10px 20px;
+        font-size: 17px;
+        font-weight: 500;
+        margin: 0px 0px 10px 0px;
+        letter-spacing: 0.5px;
+    }
+
+    .blogArticlesDesc>a {
+        color: var(--blue);
+        font-size: 13px;
+        margin: 0px 0px;
+    }
+
+    .blogArticlesDesc>p {
+        display: flex;
+        font-size: 14px;
+        line-height: 24px;
+        margin: 10px 0px;
+    }
+
+}
+
+@media (min-width:1050px) {
+
+    .blogPosts {
+        min-width: 280px;
+        padding: 0px 0px;
+        background-image: url(../assets/images/blog-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .blogContainer {
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .blogPostsMenu {
+        background-color: rgba(0, 0, 0, 0.55);
+        display: flex;
+        width: 40%;
+        max-width: 765px;
+        height: 600px;
+        justify-content: right;
+        align-items: center;
+    }
+
+    .blogPostsArticles {
+        background-color: transparent;
+        height: 600px;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+
+
+    .blogPostsMenuContainer {
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        height: 100%;
+        width: 330px;
+    }
+
+    .blogPostsMenuElements {
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    .blogPostsTitle>h4 {
+        text-transform: uppercase;
+        color: var(--white);
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin-right: 20%;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(250, 250, 250, 0.7);
+    }
+
+    .blogPostsText>p {
+        display: block;
+        color: white;
+        font-size: 14px;
+        line-height: 24px;
+        max-width: 290px;
+        padding: 20px 0px 50px 0;
+        margin: 0;
+        text-align: left;
+        box-sizing: border-box;
+    }
+
+    .blogPostsLinks {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 290px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btnBlog {
+        padding: 15px 5px;
+        margin: 15px 0;
+        width: 100%;
+        max-width: 290px;
+        background-color: var(--white);
+        text-transform: capitalize;
+        color: var(--black);
+        font-size: 15px;
+        font-weight: 500;
+        cursor: pointer;
+        border: none;
+        outline: none;
+    }
+
+    .btnBlog:hover {
+        color: var(--yellow);
+    }
+
+    .hover,
+    .btnBlog:hover {
+        color: var(--yellow);
+    }
+
+
+
+    .blogArticlesWrapper {
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        height: 80%;
+        margin-left: 30px;
+        width: 90%;
+    }
+
+    .blogArticlesPics {
+        background-color: transparent;
+        height: 65%;
+        width: 600px;
+        display: flex;
+        align-items: left;
+        justify-content: center;
+    }
+
+    .blogArticlesDescWrapper1,
+    .blogArticlesDescWrapper2,
+    .blogArticlesDescWrapper3,
+    .blogArticlesDescWrapper4 {
+        background-color: var(--white);
+        height: 35%;
+        width: 600px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .blogImage1,
+    .blogImage2,
+    .blogImage3,
+    .blogImage4 {
+        display: flex;
+        align-items: left;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .blogArticlesDesc {
+        padding: 25px;
+    }
+
+    .blogArticlesDesc>h4 {
+        color: var(--black);
+        margin: 10px 20px;
+        font-size: 17px;
+        font-weight: 500;
+        margin: 0px 0px 10px 0px;
+        letter-spacing: 0.5px;
+    }
+
+    .blogArticlesDesc>a {
+        color: var(--blue);
+        font-size: 13px;
+        margin: 0px 0px;
+    }
+
+    .blogArticlesDesc>p {
+        display: flex;
+        font-size: 14px;
+        line-height: 24px;
+        margin: 10px 0px;
+    }
+
+}
+
+@media (min-width:1300px) {
+    .blogPosts {
+        min-width: 280px;
+        padding: 0px 0px;
+        background-image: url(../assets/images/blog-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .blogContainer {
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .blogPostsMenu {
+        background-color: rgba(0, 0, 0, 0.55);
+
+        display: flex;
+        width: 40%;
+        max-width: 765px;
+        height: 600px;
+        justify-content: right;
+        align-items: center;
+    }
+
+    .blogPostsMenuContainer {
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        height: 100%;
+        width: 330px;
+    }
+
+    .blogPostsMenuElements {
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .blogPostsTitle>h4 {
+        text-transform: uppercase;
+        color: var(--white);
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin-right: 20%;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(250, 250, 250, 0.7);
+    }
+
+    .blogPostsText>p {
+        display: block;
+        color: white;
+        font-size: 14px;
+        line-height: 24px;
+        max-width: 290px;
+        padding: 20px 0px 50px 0;
+        margin: 0;
+        text-align: left;
+        box-sizing: border-box;
+    }
+
+    .blogPostsLinks {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 290px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btnBlog {
+        padding: 15px 5px;
+        margin: 15px 0;
+        width: 100%;
+        max-width: 290px;
+        background-color: var(--white);
+        text-transform: capitalize;
+        color: var(--black);
+        font-size: 15px;
+        font-weight: 500;
+        cursor: pointer;
+        border: none;
+        outline: none;
+    }
+
+    .btnBlog:hover {
+        color: var(--yellow);
+    }
+
+    .hover,
+    .btnBlog:hover {
+        color: var(--yellow);
+    }
+
+    .blogPostsArticles {
+        background-color: transparent;
+        height: 600px;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+
+    .blogArticlesWrapper {
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        height: 80%;
+        margin-left: 30px;
+        width: 90%;
+    }
+
+    .blogArticlesPics {
+        background-color: transparent;
+        height: 65%;
+        width: 750px;
+        display: flex;
+        align-items: left;
+        justify-content: center;
+    }
+
+    .blogArticlesDescWrapper1,
+    .blogArticlesDescWrapper2,
+    .blogArticlesDescWrapper3,
+    .blogArticlesDescWrapper4 {
+        background-color: var(--white);
+        height: 35%;
+        width: 750px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .blogImage1,
+    .blogImage2,
+    .blogImage3,
+    .blogImage4 {
+        display: flex;
+        align-items: left;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .blogArticlesDesc {
+        padding: 25px;
+    }
+
+    .blogArticlesDesc>h4 {
+        color: var(--black);
+        margin: 10px 20px;
+        font-size: 17px;
+        font-weight: 500;
+        margin: 0px 0px 10px 0px;
+        letter-spacing: 0.5px;
+    }
+
+    .blogArticlesDesc>a {
+        color: var(--blue);
+        font-size: 13px;
+        margin: 0px 0px;
+    }
+
+    .blogArticlesDesc>p {
+        display: flex;
+        font-size: 14px;
+        line-height: 24px;
+        margin: 10px 0px;
+    }
+
+}
